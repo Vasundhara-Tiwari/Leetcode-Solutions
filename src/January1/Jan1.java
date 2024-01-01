@@ -1,3 +1,5 @@
+package January1;
+
 import java.util.Arrays;
 
 public class Jan1 {
