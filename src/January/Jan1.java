@@ -1,4 +1,4 @@
-package January1;
+package January;
 
 import java.util.Arrays;
 
