@@ -1,8 +1,8 @@
-package January;
+package January.Jan1;
 
 import java.util.Arrays;
 
-public class Jan1 {
+public class FindContentChildren {
     public static void main(String[] args) {
         int[] g = {1,2,3};
         int[] s = {1, 1};

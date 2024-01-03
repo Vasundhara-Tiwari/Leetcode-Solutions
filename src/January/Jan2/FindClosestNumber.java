@@ -1,6 +1,6 @@
-package January;
+package January.Jan2;
 
-public class Jan2 {
+public class FindClosestNumber {
     public static void main(String[] args) {
         int[] nums = {-4,-2,1,4,8};
         System.out.println(findClosestNumber(nums));
