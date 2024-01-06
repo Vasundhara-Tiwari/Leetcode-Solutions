@@ -5,11 +5,9 @@ public class FactorialUsingRecursion {
         System.out.println(factorial(10));
     }
     public static int factorial(int n){
-        int fact = 1;
         if(n == 1 || n == 0){
-            return fact;
+            return 1;
         }
-        fact = factorial(n-1) * n;
-        return fact;
+        return factorial(n-1) * n;
     }
 }
