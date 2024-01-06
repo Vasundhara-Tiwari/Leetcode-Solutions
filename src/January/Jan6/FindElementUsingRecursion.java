@@ -10,7 +10,7 @@ public class FindElementUsingRecursion {
         if(arr[index] == k){
             return index;
         }
-        else if(index == arr.length-1){
+        if(index == arr.length-1){
             return -1;
         }
         return find(arr, k, index+1);
