@@ -1,10 +1,13 @@
 package January.Jan13;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class GenerateParentheses {
     public static void main(String[] args) {
         int nums = 3;
         List<String> al = new ArrayList<>();
-        generateAllCombination(n, 0, 0, "", al);
+        generateAllCombination(nums, 0, 0, "", al);
         System.out.println(al);
     }
     public static void generateAllCombination(int num, int left, int right, String str, List<String> al){
