@@ -1,4 +1,4 @@
-package June;
+package July;
 
 public class QueenPermutation {
     public static void main(String[] args) {
