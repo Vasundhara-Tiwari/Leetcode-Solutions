@@ -13,7 +13,7 @@ public class QueenPermutation {
             return;
         }
         for(int i = 0; i < board.length; i++){
-            if(board[i] == false){
+            if(!board[i]){
                 board[i] = true;
                 queenPermutation(board, tq, ans+" b"+i+"q"+qpsf, qpsf+1);
                 board[i] = false;
