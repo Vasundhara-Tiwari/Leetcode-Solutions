@@ -31,7 +31,7 @@ public class MergeTwoSortedArrays {
                 k++;
             }
         }
-        if(arr2.length == i){
+        if(arr2.length == j){
             while(i < arr1.length) {
                 ans[k] = arr1[i];
                 i++;
