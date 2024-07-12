@@ -20,8 +20,7 @@ public class ReverseQueue {
         if(q.isEmpty()){
             return;
         }
-        int item = q.peek();
-        q.remove();
+        int item = q.remove();
         reverseQueue(q);
         q.add(item);
     }
