@@ -30,7 +30,7 @@ public class LongestCommonSubsequence {
         return dp[i][j];
     }
     public static int lcsBU(String s1, String s2) {
-        int[][] dp = new int[s1.length()][s2.length()];
+        int[][] dp = new int[s1.length()+1][s2.length()+1];
         for (int i = 0; i < dp.length; i++) {
             Arrays.fill(dp[i], 0);
         }
