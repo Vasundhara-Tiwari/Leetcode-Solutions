@@ -6,33 +6,34 @@ public class LongestPalindromicSubstring {
         System.out.println(longestPalindrome(str));
     }
     public static String longestPalindrome(String s) {
-        int i = 0;
-        int j = 0;
-        if(isPalindrome(s)){
+        if (s.length() <= 1) {
             return s;
         }
-        String ans = "";
-        String current = "";
-        while(i < s.length()){
-            current += s.charAt(i);
-            if(isPalindrome(current)){
-                ans = ans.length() > current.length() ? ans : current;
-                j++;
+        int maxLen = 1;
+        String maxStr = s.substring(0, 1);
+
+        for (int i = 0; i < s.length(); i++) {
+            for (int j = i + maxLen; j <= s.length(); j++) {
+                if (j - i > maxLen && isPalindrome(s.substring(i, j))) {
+                    maxLen = j - i;
+                    maxStr = s.substring(i, j);
+                }
             }
-            i++;
         }
-        return ans;
+        return maxStr;
     }
-    public static boolean isPalindrome(String str){
-        int i = 0;
-        int j = str.length()-1;
-        while(i <= j){
-            if(str.charAt(i) != str.charAt(j)){
+    private static boolean isPalindrome(String str) {
+        int left = 0;
+        int right = str.length() - 1;
+
+        while (left < right) {
+            if (str.charAt(left) != str.charAt(right)) {
                 return false;
             }
-            i++;
-            j--;
+            left++;
+            right--;
         }
+
         return true;
     }
 }
