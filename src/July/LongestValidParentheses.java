@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class LongestValidParentheses {
     public static void main(String[] args) {
-        String str = "()(())))";
+        String str = "())";
         System.out.println(longestValidParentheses(str));
     }
     public static int longestValidParentheses(String s) {
