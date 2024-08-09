@@ -1,6 +1,10 @@
 package practice;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.Queue;
+import java.util.LinkedList;
+import java.util.List;
 
 public class TopologicalSort {
     HashMap<Integer, HashMap<Integer, Integer>> map;
