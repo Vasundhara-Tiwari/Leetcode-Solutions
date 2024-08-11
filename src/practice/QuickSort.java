@@ -1,36 +1,37 @@
-package July;
+package practice;
 
 import java.util.Arrays;
 
 public class QuickSort {
     public static void main(String[] args) {
-        int[] arr = {5, 7, 2, 3, 8, 1, 4};
+        int[] arr = {6, 5, 3, 1, 8, 7, 2, 4};
         sort(arr, 0, arr.length-1);
         System.out.println(Arrays.toString(arr));
     }
     public static void sort(int[] arr, int si, int ei){
-        if(si >= ei){
+        if (si > ei){
             return;
         }
         int index = partition(arr, si, ei);
         sort(arr, si, index-1);
         sort(arr, index+1, ei);
     }
-    private static int partition(int[] arr, int si, int ei) {
-        int index = si;
+    public static int partition(int[] arr, int si, int ei){
+        int index = 0;
+        int i = 0;
         int item = arr[ei];
-        for (int i = si; i < ei; i++) {
-            if(arr[i] < item){
-                int temp = arr[i];
-                arr[i] = arr[index];
-                arr[index] = temp;
+        while (i < ei){
+            if (arr[index] < item){
+                int temp = arr[index];
+                arr[index] = arr[i];
+                arr[i] = temp;
                 index++;
             }
+            i++;
         }
-        int temp = arr[ei];
-        arr[ei] = arr[index];
-        arr[index] = temp;
-//        System.out.println(Arrays.toString(arr));
+        int temp = arr[index];
+        arr[index] = arr[ei];
+        arr[ei] = temp;
         return index;
     }
 }
