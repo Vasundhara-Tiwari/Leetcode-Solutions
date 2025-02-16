@@ -1,5 +1,7 @@
 package practice;
 
+import java.util.Arrays;
+
 public class ConstructLexicographicallyLargestValidSequence {
     public int[] constructDistancedSequence(int n) {
         int[] result = new int[2 * n - 1];
@@ -42,6 +44,6 @@ public class ConstructLexicographicallyLargestValidSequence {
     public static void main(String[] args) {
         ConstructLexicographicallyLargestValidSequence sq = new ConstructLexicographicallyLargestValidSequence();
         int n = 5;
-        System.out.println(sq.constructDistancedSequence(n));
+        System.out.println(Arrays.toString(sq.constructDistancedSequence(n)));
     }
 }
