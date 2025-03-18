@@ -1,6 +1,6 @@
 package practice;
 
-public class ClosetPrimes{
+public class ClosestPrimes {
     int[] result = {-1, -1};
     int temp = Integer.MAX_VALUE;
     int prev = 0;
