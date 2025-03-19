@@ -1,5 +1,8 @@
 package practice;
 
+import java.util.Map;
+import java.util.HashMap;
+
 public class DivideArrayIntoEqualPairs{
     public boolean divideArray(int[] nums) {
         Map<Integer, Integer> frequency = new HashMap<>();
