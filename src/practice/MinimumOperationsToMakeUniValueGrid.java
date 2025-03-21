@@ -1,6 +1,10 @@
 package practice;
 
-public class MinimumOperationsToMake {
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class MinimumOperationsToMakeUniValueGrid {
     public int minOperations(int[][] grid, int x) {
         List<Integer> values = new ArrayList<>();
         for (int[] row : grid) {
